@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіти з лабораторних робіт</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <h1>Звіти з лабораторних робіт</h1>
+            <p>З дисципліни: Програмування інтернет-застосувань</p>
+            <p>Студентка групи ІПЗ_22_301</p>
+        </div>
+        <img src="student_photo.jpg" alt="Фото студента" class="student-photo">
+    </header>
+
+    <!-- Навігація для вибору лабораторних робіт -->
+    <nav>
+        <button onclick="showLab('lab1')">Лабораторна робота 1</button>
+        <button onclick="showLab('lab1_2')">Лабораторна робота 1.2</button>
+        <button onclick="showLab('lab2')">Лабораторна робота 2</button>
+        <button onclick="showLab('lab2_1')">Лабораторна робота 2.1</button>
+        <button onclick="showLab('lab3')">Лабораторна робота 3</button>
+        <button onclick="showLab('lab3_1')">Лабораторна робота 3.1</button>
+        <button onclick="showLab('lab4')">Лабораторна робота 4</button>
+        <button onclick="showLab('lab4_1')">Лабораторна робота 4.1</button>
+        <button onclick="showLab('lab5')">Лабораторна робота 5</button>
+        <button onclick="showLab('lab5_1')">Лабораторна робота 5.1</button>
+
+    </nav>
+
+    <main>
+        <!-- Слайдбар для вибору розділу -->
+        <div class="sidebar">
+            <button onclick="showSection('description')">Опис предметного середовища</button>
+            <button onclick="showSection('goal')">Тема, мета, місце розташування сайту та звіту</button>
+            <button onclick="showSection('structure')">СТРУКТУРА ДОКУМЕНТА</button>
+            <button onclick="showSection('tables')">HTML-код таблиць</button>
+            <button onclick="showSection('forms')">HTML-код форми</button>
+            <button onclick="showSection('images')">HTML-код зображення</button>
+            <button onclick="showSection('conclusion')">Висновки</button>
+        </div>
+
+        <!-- Контент для кожної лабораторної роботи -->
+        <div class="content">
+            <!-- Лабораторна робота 1 -->
+            <div id="lab1" class="content-section">
+                <div id="description">
+<h4>Опис предметного середовища</h4>
+<p>Бізнес логіка:</p>
+<p>
+    <strong>Тема:</strong> Створення веб-сайту для салону краси "The Keratin"<br />
+    <strong>Мета проєкту:</strong>Забезпечити зручний і сучасний спосіб для клієнтів
+    взаємодіяти із салоном краси. Це включає онлайн-запис, доступ до
+    інформації про послуги та команду салону, відкриті вакансії, а також
+    представлення продукції салону.<br />
+</p>
+<p>
+    <strong>Сценарій використання сайту для клієнтів:</strong>
+</p>
+<ul>
+    <li>Клієнт обирає послугу, майстра та записується онлайн.</li>
+    <li>Клієнт переглядає інформацію про салон.</li>
+    <li>Клієнт вивчає ціни послуг, які надані салоном.</li>
+    <li>Пошукач вакансій подає заявку на роботу.</li>
+    <li>Клієнт переглядає та замовляє продукцію.</li>
+</ul>
+<p>
+    <strong>Сценарій використання сайту для адміністрації:</strong>
+</p>
+<ul>
+    <li><strong>Управління послугами:</strong> Додавати, редагувати та видаляти послуги, що пропонуються салоном,
+        включаючи опис, ціну та тривалість.</li>
+    <li><strong>Керування записами клієнтів:</strong> Перегляд, підтвердження або скасування онлайн-записів клієнтів, а
+        також управління графіком роботи майстрів.</li>
+    <li><strong>Управління командою:</strong> Додавати, редагувати та видаляти інформацію про майстрів, їхні
+        спеціалізації та доступність.</li>
+    <li><strong>Вакансії:</strong> Створення та редагування відкритих вакансій, перегляд поданих заявок від кандидатів,
+        управління процесом найму.</li>
+    <li><strong>Продаж продукції:</strong> Додавати, редагувати та видаляти товари, управляти запасами, а також
+        переглядати замовлення клієнтів.</li>
+</ul>
+                </div>
+                <div id="goal">
+                    <p><strong>Тема:</strong>СТРУКТУРА HTML-ДОКУМЕНТА. ВИБІР ПРЕДМЕТНОЇ ГАЛУЗІ.
+                    РОБОТА З ПОСИЛАННЯМИ, ТАБЛИЦЯМИ, ЗОБРАЖЕННЯМИ, СПИСКАМИ в HTML-ДОКУМЕНТІ.</p><br/>
+                    <p><strong>Мета:</strong>придбати практичні навички роботи з HTML-документом, таблицями, , зображеннями, посиланнями, списками, формами
+                    Створити шаблон звітного HTML-документом для відображення результатів роботи всіх лабораторних робіт.
+                    </p>
+                    <a href="https://bilberryyy.github.io/ipz22_301-appWEB-DerkachDaria-MEU-2025/#">Посилання на веб-сторінку салону краси</a><br/>
+                    <a href="https://github.com/bilberryyy/ipz22_301-appINDEPENDENT-DerkachDaria-MEU-2025">Посилання на репозиторій веб-сторінки</a>
+                </div>
+                <div id="structure">
+                    <h4>СТРУКТУРА ДОКУМЕНТА</h4>
+                </div>
+                <div id="tables">
+                    <img src="table.png" alt="Фото коду таблиці" class="screen-img">
+                    <img src="table-on-web-site.png" alt="Фото таблиці" class="screen-img">
+                </div>
+                <div id="forms">
+                    <img src="form.png" alt="Фото коду таблиці" class="screen-img">
+                    <img src="form-on-web-site.png" alt="Фото таблиці" class="screen-img">
+                </div>
+                <div id="images">
+                    <img src="img.png" alt="Фото коду таблиці" class="screen-img">
+                    <img src="img-on-web-site.png" alt="Фото таблиці" class="screen-img">
+                </div>
+                <div id="conclusion">
+                    <h4>Висновки</h4>
+                    <p>Створення веб-сайту для салону краси є важливим кроком у забезпеченні ефективної взаємодії з клієнтами. Це дозволяє
+                    клієнтам зручно записуватися на послуги, переглядати інформацію про команди та послуги, що підвищує загальний рівень
+                    задоволеності. Наявність веб-сайту також суттєво підвищує видимість салону в Інтернеті, що є критично важливим для
+                    залучення нових клієнтів. Сайт стає візитною карткою бізнесу, що демонструє його професіоналізм та надійність.</p>
+                </div>
+            </div>
+
+            <!-- Лабораторна робота 1.2 -->
+            <div id="lab1_2" class="content-section">
+                <h3>Лабораторна робота 1.2</h3>
+                <div id="description">
+                    <h4>Опис предметного середовища</h4>
+                    <p>Опис для лабораторної роботи 1.2...</p>
+                </div>
+            </div>
+
+            <!-- Лабораторна робота 2 -->
+            <div id="lab2" class="content-section">
+                <h3>Лабораторна робота 2</h3>
+                <!-- Вміст лабораторної роботи 2... -->
+            </div>
+            <!-- Лабораторна робота 2_1 -->
+            <div id="lab2_1" class="content-section">
+                <h3>Лабораторна робота 2.1</h3>
+                <!-- Вміст лабораторної роботи 2.1... -->
+            </div>
+            <!-- Лабораторна робота 3 -->
+            <div id="lab3" class="content-section">
+                <h3>Лабораторна робота 3</h3>
+                <!-- Вміст лабораторної роботи 3... -->
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Функція для відображення вибраної лабораторної роботи
+        function showLab(labId) {
+            const labs = document.querySelectorAll('.content-section');
+            labs.forEach(lab => lab.classList.remove('active'));
+            document.getElementById(labId).classList.add('active');
+        }
+
+        // Функція для відображення вибраного розділу у вибраній лабораторній роботі
+        function showSection(sectionId) {
+            const activeLab = document.querySelector('.content-section.active');
+            if (activeLab) {
+                const sections = activeLab.querySelectorAll('div');
+                sections.forEach(section => section.style.display = 'none');
+                activeLab.querySelector(`#${sectionId}`).style.display = 'block';
+            }
+        }
+
+        // Ініціалізація: показ першої лабораторної роботи і першого розділу
+        document.addEventListener("DOMContentLoaded", () => {
+            showLab('lab1');
+            showSection('description');
+        });
+    </script>
+</body>
+
+</html>

@@ -42,9 +42,27 @@
      border-radius: 12px;
  }
 
+ nav button:hover {
+     background-color: #455f79;
+     color: #ffffff;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+ }
+
+ .sidebar button:hover {
+     background-color: #5a718c;
+     color: #ffffff;
+     transform: translateY(-2px);
+     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+ }
+
  main {
      display: flex;
      padding: 20px;
+ }
+
+ #structure p {
+     white-space: pre-line;
  }
 
  .screen-img{
